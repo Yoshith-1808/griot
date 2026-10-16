@@ -1,0 +1,37 @@
+{
+  "name": "@griot/mcp-server",
+  "version": "0.1.0",
+  "description": "Griot core MCP server with Streamable HTTP transport and Bedrock integration",
+  "private": true,
+  "type": "module",
+  "main": "./dist/index.js",
+  "scripts": {
+    "dev": "tsx watch src/index.ts",
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run"
+  },
+  "dependencies": {
+    "@aws-sdk/client-bedrock-runtime": "^3.750.0",
+    "@griot/shared": "workspace:*",
+    "@modelcontextprotocol/sdk": "^1.6.1",
+    "better-sqlite3": "^13.0.0",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.7",
+    "exponential-backoff": "^3.1.2",
+    "express": "^4.21.2",
+    "pino": "^9.6.0",
+    "zod": "^3.24.2"
+  },
+  "devDependencies": {
+    "@types/better-sqlite3": "^7.6.12",
+    "@types/cors": "^2.8.17",
+    "@types/express": "^5.0.0",
+    "@types/node": "^22.13.4",
+    "pino-pretty": "^13.0.0",
+    "tsx": "^4.19.3",
+    "typescript": "^5.7.3",
+    "vitest": "^3.0.5"
+  }
+}

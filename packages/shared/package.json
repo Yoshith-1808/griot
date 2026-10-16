@@ -1,0 +1,18 @@
+{
+  "name": "@griot/shared",
+  "version": "0.1.0",
+  "description": "Shared TypeScript definitions and interfaces for Griot",
+  "private": true,
+  "type": "module",
+  "main": "./src/types.ts",
+  "types": "./src/types.ts",
+  "exports": {
+    ".": "./src/types.ts"
+  },
+  "scripts": {
+    "typecheck": "tsc --noEmit"
+  },
+  "devDependencies": {
+    "typescript": "^5.7.3"
+  }
+}

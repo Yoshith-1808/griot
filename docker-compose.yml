@@ -1,0 +1,34 @@
+services:
+  griot:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: griot-monorepo
+    restart: unless-stopped
+    ports:
+      - "3000:3000"
+      - "5173:5173"
+    environment:
+      - NODE_ENV=production
+      - HOST=0.0.0.0
+      - MCP_PORT=3000
+      - DEMO_CLIENT_PORT=5173
+      - AWS_REGION=${AWS_REGION:-us-east-1}
+      - AWS_ACCESS_KEY_ID=${AWS_ACCESS_KEY_ID:-}
+      - AWS_SECRET_ACCESS_KEY=${AWS_SECRET_ACCESS_KEY:-}
+      - BEDROCK_MODEL_ID=${BEDROCK_MODEL_ID:-anthropic.claude-sonnet-4-5-20250929-v1:0}
+      - BEDROCK_EMBEDDING_MODEL_ID=${BEDROCK_EMBEDDING_MODEL_ID:-amazon.titan-embed-text-v2:0}
+      - DEMO_MODE=${DEMO_MODE:-true}
+      - LOG_LEVEL=${LOG_LEVEL:-info}
+    volumes:
+      - griot-data:/app/data
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:3000/health"]
+      interval: 10s
+      timeout: 5s
+      retries: 3
+      start_period: 10s
+
+volumes:
+  griot-data:
+    driver: local

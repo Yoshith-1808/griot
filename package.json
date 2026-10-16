@@ -1,0 +1,25 @@
+{
+  "name": "griot-monorepo",
+  "version": "0.1.0",
+  "description": "Griot: Self-hosted MCP server for Alexa+ persistent voice-first episodic memory",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=22.0.0"
+  },
+  "workspaces": ["packages/*"],
+  "scripts": {
+    "dev:server": "pnpm --filter @griot/mcp-server dev",
+    "dev:client": "pnpm --filter @griot/demo-client dev",
+    "dev:all": "node scripts/dev-all.js",
+    "build": "pnpm --recursive run build",
+    "test": "pnpm --filter @griot/mcp-server test",
+    "typecheck": "pnpm --recursive run typecheck",
+    "lint": "biome check .",
+    "format": "biome format --write ."
+  },
+  "devDependencies": {
+    "@biomejs/biome": "^1.9.4",
+    "typescript": "^5.7.3"
+  }
+}
