@@ -10,6 +10,12 @@
 
 ---
 
+### Links
+- **Video Demo Link**: https://drive.google.com/file/d/1Or1frai6zMkQnEFmd4RARAQ2DqcJpspr/view?usp=sharing
+- **GitHub Repository**: https://github.com/Yoshith-1808/griot
+
+---
+
 ### Inspiration
 Every voice assistant user has experienced the frustration of episodic amnesia. You tell Alexa that your friend David is severely allergic to peanuts, or that your sister Maya loves handcrafted Japanese pottery. Ten minutes later, she has no idea. When you ask, *"What can we cook for dinner with David?"* or *"What birthday gift should I buy for Maya?"*, Alexa either searches generic web recipes or apologizes that she doesn't understand.
 

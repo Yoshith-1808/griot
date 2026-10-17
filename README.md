@@ -5,6 +5,7 @@
 [![MIT License](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 [![MCP Spec](https://img.shields.io/badge/MCP%20Spec-2025--11--25-green.svg)](https://modelcontextprotocol.io)
 [![AWS Bedrock](https://img.shields.io/badge/AWS%20Bedrock-Claude%20%26%20Titan-orange.svg)](https://aws.amazon.com/bedrock/)
+[![Demo Video](https://img.shields.io/badge/Demo%20Video-Google%20Drive-red.svg)](https://drive.google.com/file/d/1Or1frai6zMkQnEFmd4RARAQ2DqcJpspr/view?usp=sharing)
 [![Node.js](https://img.shields.io/badge/Node.js-%3E%3D22.0.0-green.svg)](https://nodejs.org/)
 
 ---
@@ -19,6 +20,13 @@ Voice assistants suffer from **episodic amnesia**. When you tell Alexa that your
 - **Temporal Reranking**: Balances semantic similarity with recency decay so recent memories rank higher.
 - **Zero-Ops SQLite Vector Store**: Embedded vector search shipping right inside Docker.
 - **Immutable Audit Trails**: Full compliance logging for every memory created, searched, or forgotten.
+
+---
+
+## 📹 Demo Video
+
+Watch the hands-free conversational demonstration of Griot with the VoiceOrb client and MCP server:  
+▶️ **[Watch the Live Demo Video on Google Drive](https://drive.google.com/file/d/1Or1frai6zMkQnEFmd4RARAQ2DqcJpspr/view?usp=sharing)**
 
 ---
 
